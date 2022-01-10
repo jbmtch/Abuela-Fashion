@@ -1,4 +1,4 @@
-# Sleek Slinks Clothing
+# Sleek Slinks Fashion
 Our team was given the task of creating a portal for an e-commerce website by Hack Reactor as our Front End Capstone.
 The client was using a legacy API for their product information that we were required to adapt to.
 Utilizing modern technologies such as React hooks and Styled components, the team was able to create four unique sections
@@ -13,7 +13,7 @@ The main description for the product currently being viewed. It shows all the re
 sizing, average customer rating, quantity in stock, and ability to add to cart. While our team was not tasked with the full Cart service we ensured it was connected properly. The main image can be clicked on for a more detailed view, as well as having access to the rest of the pictures
 for that specific item, so as to not require exiting the zoom view and selecting another thumbnail. This greatly improved user experience.
 
-![](./examples/overview.gif)
+![](https://media.giphy.com/media/RYQFYUTsZfr0meAWoD/giphy.gif)
 
 # Related Products and Outfit
 ### **Contributor: Kenneth Bakke**
@@ -25,7 +25,7 @@ are on each item card, as well as the option to compare the related product to t
 item card. The outfit has the option to add the current product to a user specific outfit that persists as the current product changes. It is also
 possible to remove any product from an outfit.
 
-![](./examples/related-products.gif)
+![](https://media.giphy.com/media/LharojqjrGGwXIzDEE/giphy-downsized-large.gif)
 
 # Questions and Answers
 ### **Contributor: Yasin Khan**
@@ -36,7 +36,7 @@ Showing the first four user submitted questions related to the current product, 
 The ability to mark specific questions and/or answers as helpful is implemented as well as the ability to report a question or answer.
 There is also the option to add a question and answer, both with the functionality of adding images and required data for viewing.
 
-![](./examples/questions.gif)
+![](https://media.giphy.com/media/CMgTuEdytNqcNZrqIE/giphy.gif)
 
 # Ratings and Reviews
 ### **Contributor: Hatha Dam**
@@ -47,7 +47,7 @@ Every user is able to view all reviews for the current product, an average ratin
 reviewer specific rating, the date submitted, and optional pictures. Reviews also have the option to be marked as helpful or to report just as with
 the question and answer section. The average rating is displayed as a star rating ranging from 1 to 5 stars. This average based on all the review scores and displays number of reviews for each of the star options. There is also a list of product characteristics that show the average rating for each characteristic. Finally there is also an option to add your own review complete with image handling, required characteristics, and text input.
 
-![](./examples/reviews.gif)
+![](https://media.giphy.com/media/ZNxH8bRV8SmNMa4SQ4/giphy.gif)
 
 
 ## Getting Started
