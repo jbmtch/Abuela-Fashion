@@ -271,7 +271,7 @@ export default function ImageGallery() {
   const renderPortal = ({ portal }) => {
     return portal(
       <div>
-        <ModalContainer onClick={e => setmodalOpen(false)}>
+        <ModalContainer onClick={e => setmodalOpen(!modalOpen)}>
           <ModalBody
             onClick={e => {
               e.stopPropagation();
