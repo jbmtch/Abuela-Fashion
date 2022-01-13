@@ -1,8 +1,11 @@
 node_modules
 yarn.lock
+config.js
+dbconfig.js
+csv_data
 client/dist/bundle.js
 client/src/config.js
-server/controllers/config.js
+server/controllers/config.example.js
 *.excalidraw
 .DS_Store
 package-lock.json
