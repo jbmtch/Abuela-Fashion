@@ -1,4 +1,4 @@
-const TOKEN = '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';
+const TOKEN = '';
 
 const cloudinaryInfo = {
   CLOUDINARY_NAME: '',

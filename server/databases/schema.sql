@@ -1,7 +1,5 @@
 
--- CREATE TABLE products (
---   id serial not null primary key
--- );
+
 
 CREATE TABLE reviews (
   id serial not null primary key,
@@ -38,15 +36,14 @@ CREATE TABLE photos (
   "url" varchar(1000) not null
 );
 
--- alter table reviews add foreign key (product_id) references products(id);
--- alter table characteristics add foreign key (product_id) references products(id);
+
 alter table characteristics_reviews add foreign key (characteristic_id) references characteristics(id);
 alter table characteristics_reviews add foreign key (review_id) references reviews(id);
 alter table photos add foreign key (review_id) references reviews(id);
 
 
-copy reviews(id, product_id, rating, date, summary, body, recommend, reported, reviewer_name, reviewer_email, response, helpfulness) from './server/databases/csv_data/reviews.csv';
-copy characteristics(id, product_id, name) from './server/databases/csv_data/characteristics.csv';
-copy characteristics_reviews(id, characteristic_id, review_id, value) from './server/databases/csv_data/characteristic_reviews.csv';
-copy photos(id, review_id, url) from './server/databases/csv_data/reviews_photos.csv';
+copy reviews(id, product_id, rating, date, summary, body, recommend, reported, reviewer_name, reviewer_email, response, helpfulness) from './server/databases/csv_data/reviews.csv' delimiter(',') csv header;
+copy characteristics(id, product_id, name) from './server/databases/csv_data/characteristics.csv' delimiter(',') csv header;
+copy characteristics_reviews(id, characteristic_id, review_id, value) from './server/databases/csv_data/characteristic_reviews.csv' delimiter(',') csv header;
+copy photos(id, review_id, url) from './server/databases/csv_data/reviews_photos.csv' delimiter(',') csv header;
 
