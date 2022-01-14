@@ -9,7 +9,8 @@
     "watch": "webpack --config ./webpack.config.js --mode development -w",
     "test": "jest --env=jsdom",
     "coverage": "jest --coverage",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "api": "nodemon server/databases/server.js"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
