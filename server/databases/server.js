@@ -16,8 +16,19 @@ app.get('/home', function(req, res) {
       res.send(results);
     }
   });
-
 })
+
+app.get('/home/meta', function(req, res) {
+  db.getMetaData((err, results) => {
+    if (err) {
+      console.error(err);
+    } else {
+      res.send(results);
+    }
+  })
+})
+
+
 
 app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`);

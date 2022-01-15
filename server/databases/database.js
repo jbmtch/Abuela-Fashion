@@ -26,6 +26,17 @@ var getAllReviews = function(callback, productId = 5, page = 2, count = 5) {
   })
 }
 
+var getMetaData = function(callback, productId = 5) {
+  var queryString = 'select reviews.rating, reviews.recommend, characteristics.name, characteristics_reviews.value from reviews left join characteristics_reviews on characteristics_reviews.review_id = reviews.id left join characteristics on characteristics.id = characteristics_reviews.characteristic_id limit 25;'
+  db.query(queryString)
+  .then((results) => {
+    callback(null, results);
+  })
+  .catch((error) => {
+    callback(error, null);
+  })
+}
+
 
 
 console.log('Successfully connected to postgres db: ', options.database);
@@ -33,6 +44,7 @@ console.log('Successfully connected to postgres db: ', options.database);
 
 module.exports = {
   getReviews: getAllReviews,
+  getMetaData: getMetaData
 
 }
 
