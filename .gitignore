@@ -14,3 +14,5 @@ FEC-Key.pem
 client/src/components/ratingsReviews/metaDummy.jsx
 client/src/components/ratingsReviews/dummyDataReviews.jsx
 *.bundle.js
+sdc.pem
+loaderio.txt

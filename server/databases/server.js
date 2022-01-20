@@ -10,6 +10,8 @@ const db = require('./database.js');
 app.use(express.json());
 
 
+
+
 app.get('/reviews/', function(req, res) {
   db.getReviews((err, results) => {
     if (err) {
@@ -29,6 +31,8 @@ app.get('/reviews/meta/', function(req, res) {
     }
   }, req.query.product_id)
 })
+
+
 
 
 
